@@ -1,0 +1,159 @@
+img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+body { 
+    margin-top: 50px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-image: url('./images/ts_favicon_alt.png');
+    background-size: cover;
+}
+
+.logo:hover {
+    background-image: url('./images/ts_favicon_alt_hover.png');
+}
+
+#nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: 55px 0;
+    text-align: center;
+}
+
+.tab, .link {
+    display: inline-block;
+    text-align: center;
+    padding: 0 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: darkgoldenrod !important;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: white !important;
+    background-color: darkgoldenrod !important;
+}
+
+a {
+    color: darkgoldenrod !important;
+}
+
+ul {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 30px;
+}
+
+li {
+    margin: 0 40px;
+}
+
+.indicator {
+    display: none;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 26px;
+}
+
+/* Info_______________________________ */
+
+.about {
+    padding-right: 35px !important;
+    margin-bottom: 20px;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+/* Work_______________________________ */
+
+.card {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #ededed;
+ }
+ 
+ .card-title {
+     display: none;
+     top: 5px;
+     padding: 20px;
+     font-size: 16px !important;
+     font-weight: bold !important;
+     text-transform: uppercase;
+     color: black !important;
+ }
+ .card-title p {
+     text-transform: none; 
+ }
+
+ .card:hover .card-title {
+     display: block;
+ }
+
+ span {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+a.darken {
+    /* display: inline-block; */
+    background: black;
+    padding: 0;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken:hover img {
+    opacity: 0;
+            
+}
+
+/* .description-text {
+    font-size: 15px !important;
+
+} */
+
+/* Media Queries_____________________________ */
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
