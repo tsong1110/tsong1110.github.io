@@ -32,7 +32,7 @@ body {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     padding: 10px;
-    margin: 35px 0 15px;
+    margin: 35px 10px 15px;
     text-align: center;
 }
 
@@ -93,8 +93,31 @@ p {
     color: grey !important;
 }
 
-/* Work_______________________________ */
+.divider {
+    border-bottom: 1px solid grey;
+    margin: 35px 10px 15px;
+}
 
+#back-top {
+    display: block;
+    width: 3%;
+    position: fixed;
+    bottom: 100px;
+    margin-left: 1150px;
+}
+
+#back-top span {
+    transition: 0.5s;
+    opacity: 0.55;
+}
+#back-top span:hover {
+    opacity: 1;
+}
+
+/* Work_______________________________ */
+.row {
+    margin-top: 20px;
+}
 .card {
     cursor: pointer;
     box-shadow: none;
@@ -145,12 +168,16 @@ a.darken img {
 
 a.darken:hover img {
     opacity: 0;
-            
 }
 
-/* .description-text {
-    font-size: 15px !important;
+.mock {
+    background-color: #eaeaea;
+}
 
+/* .mock img {
+    width: 80%;
+    vertical-align: middle;
+    margin: auto;
 } */
 
 /* About_______________________________ */

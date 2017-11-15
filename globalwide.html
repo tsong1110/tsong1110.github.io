@@ -27,11 +27,79 @@
             </ul>
         </div>
         <div id="work">
-            <!-- <div class="row">
-                <div class="col s12">
-                    <p>Welcome to my online portfolio! Here is a collection of my selected design work.</p>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Email marketing - <br>Solar Panels</p>
                 </div>
-            </div> -->
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Email marketing - <br>Cable TV deals marketed towards Football season</p>
+                </div>
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Email marketing - <br>Cable TV deals marketed towards Soccer season</p>
+                </div>
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Interstital page for ReviewPlugins.com</p>
+                </div>
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_5.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Interstitial page for PC HealthBoost</p>
+                </div>
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_6.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Interstitial page for Video Download Converter</p>
+                </div>
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_7.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l2">
+                    <p class="description-text">Landing/Home page for www.savingsgalore.com</p>
+                </div>
+                <div class="col s12 l10">
+                    <div class="mock">
+                        <img src="images/designs/GWM_8.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
             <div class="row">
                 <div class="col s6 m4">
                     <div class="card">
@@ -119,6 +187,10 @@
                 </div>
             </div>
         </div>
+        <div id="back-top" style="display: none;">
+                <a href="#top"><span><img src="images/uparrow.png"></span></a>
+        </div>
+        
         <div id="about">
             <div class="row">
                 <div class="about col s12 m6">
@@ -127,7 +199,6 @@
                         in Graphic and Web Design. I am proficient in Frontend development as well.<br>
                         <br> I've worked with data driven design teams in both corporate and startup environments closely partnered with UX designers and Product Managers. This has allowed me to expand
                         my knowledge and skills to apply to a whole graphical system.<br>
-
                         <br> Skills and Applications:<br>
                         Adobe Creative Suites<br>
                         Sketch<br>
@@ -227,6 +298,33 @@
                     $("form").submit();
                 }
             })
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        
+            // hide #back-top first
+            $("#back-top").hide();
+            
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+        
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+        
         });
     </script>
 
